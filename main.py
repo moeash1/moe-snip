@@ -19,8 +19,24 @@ TRUSTED_WALLETS = set([
     "3BLjRcxWGtR7WRshJ3hL25U3RjWr5Ud98wMcczQqk4Ei",
     "719sfKUjiMThumTt2u39VMGn612BZyCcwbM5Pe8SqFYz",
     "Av3xWHJ5EsoLZag6pr7LKbrGgLRTaykXomDD5kBhL9YQ",
-    "suqh5sHtr8HyJ7q8scBimULPkPpA557prMG47xCHQfK"  # Cuppsy
-    # Add rest here if needed
+    "3kebnKw7cPdSkLRfiMEALyZJGZ4wdiSRvmoN4rD1yPzV",
+    "4BdKaxN8G6ka4GYtQQWk4G4dZRUTX2vQH9GcXdBREFUk",
+    "5t9xBNuDdGTGpjaPTx6hKd7sdRJbvtKS8Mhq6qVbo8Qz",
+    "3h65MmPZksoKKyEpEjnWU2Yk2iYT5oZDNitGy5cTaxoE",
+    "Di75xbVUg3u1qcmZci3NcZ8rjFMj7tsnYEoFdEMjS4ow",
+    "As7HjL7dzzvbRbaD3WCun47robib2kmAKRXMvjHkSMB5",
+    "2m8Mc2ngJCmpbEEoYhwT9U929z6C4CPKLatWnR775u9a",
+    "4DdrfiDHpmx55i4SPssxVzS9ZaKLb8qr45NKY9Er9nNh",
+    "G3g1CKqKWSVEVURZDNMazDBv7YAhMNTjhJBVRTiKZygk",
+    "CvNiezB8hofusHCKqu8irJ6t2FKY7VjzpSckofMzk5mB",
+    "DYAn4XpAkN5mhiXkRB7dGq4Jadnx6XYgu8L5b3WGhbrt",
+    "9yYya3F5EJoLnBNKW6z4bZvyQytMXzDcpU5D6yYr4jqL",
+    "4AHgEkTsGqY77qtde4UJn9yZCrbGcM7UM3vjT3qM4G5H",
+    "8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6",
+    "ApRnQN2HkbCn7W2WWiT2FEKvuKJp9LugRyAE1a9Hdz1",
+    "EHg5YkU2SZBTvuT87rUsvxArGp3HLeye1fXaSDfuMyaf",
+    "2T5NgDDidkvhJQg8AHDi74uCFwgp25pYFMRZXBaCUNBH",
+    "suqh5sHtr8HyJ7q8scBimULPkPpA557prMG47xCHQfK"
 ])
 
 bot = Bot(token=TELEGRAM_TOKEN)
@@ -36,7 +52,7 @@ async def send_alert(token_address, market_cap, wallet_count):
         pass
 
 async def listen():
-    url = f"wss://stream.helius.xyz/v0/transactions/?api-key={API_KEY}"
+    url = wss://rpc.helius.xyz/?api-key=7dba3ed1-7418-4c81-9c48-9d551f1a221a
     async with websockets.connect(url) as ws:
         subscribe_msg = {
             "type": "subscribe",
