@@ -52,7 +52,7 @@ async def send_alert(token_address, market_cap, wallet_count):
         pass
 
 async def listen():
-    url = wss://rpc.helius.xyz/?api-key=7dba3ed1-7418-4c81-9c48-9d551f1a221a
+  url = "wss://rpc.helius.xyz/?api-key=7dba3ed1-7418-4c81-9c48-9d551f1a221a"
     async with websockets.connect(url) as ws:
         subscribe_msg = {
             "type": "subscribe",
