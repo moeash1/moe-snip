@@ -67,7 +67,7 @@ def passes_filters(tx):
 
 # ✅ MAIN STREAMING FUNCTION
 async def listen():
-    url = "wss://stream.helius.xyz/v0/transactions/?api-key=7dba3ed1-7418-4c81-9c48-9d551f1a221a"
+    url = "wss://rpc.helius.xyz/?api-key=7dba3ed1-7418-4c81-9c48-9d551f1a221a"
     async with websockets.connect(url) as ws:
         await ws.send(json.dumps({"type": "subscribe", "accounts": TRUSTED_WALLETS}))
         print("🚀 Listening to Smart Wallets...")
